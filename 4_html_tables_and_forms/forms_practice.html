@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms demo</h1>
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter a Usernme: </label>
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter the Passowrd: </label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Enter the Color: </label>
+        <input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="number">Enter a Number: </label>
+        <input
+          type="number"
+          id="number"
+          placeholder="enter the number"
+          name="num"
+        />
+      </p>
+    </form>
+    <hr />
+    <h1>hijacking searches</h1>
+    <form action="https://www.bing.com/search">
+      <input type="text" name="q" />
+      <button>search bing</button>
+    </form>
+    <hr />
+    <form action="/tcaos">
+      <p>
+        <!--CHECKBOXES INTRO-->
+        <label for="">Brands for shopping :</label>
+        <input type="checkbox" id="mnc1" name="company" />
+        <label for="mnc1">Amazon</label>
+        <input type="checkbox" id="mnc2" name="company" />
+        <label for="mnc2">Flipcart</label>
+        <input type="checkbox" id="mnc3" name="company" />
+        <label for="mnc3">AJio</label>
+      </p>
+      <p>
+        <!--RADIO INTRO-->
+        <label>Gender: </label>
+        <input type="radio" name="gender" id="Male" value="Male" />
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female" />
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Others" value="Others" />
+        <label for="Others">Others</label>
+      </p>
+      <p>
+        <!--SELECT INTRO-->
+        <label for="meal">Please select the meal:</label>
+        <select name="meal" id="meal">
+          <option value="" selected>----Please select an option----</option>
+          <option value="non-Veg">Chicken And steaks</option>
+          <option value="veg">Vegetarian</option>
+        </select>
+      </p>
+      <p>
+        <label for="">Amount of companies: </label>
+        <input
+          type="range"
+          name="amt_of_companies"
+          id="comp"
+          min="1"
+          max="100"
+          value="10"
+        />
+      </p>
+      <p>
+        <label for="reviews">Enter your reviews: </label><br />
+        <textarea name="review" id="reviews" cols="40" rows="10"></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
